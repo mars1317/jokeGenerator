@@ -1,0 +1,78 @@
+.MenuToggle {
+  position: absolute;
+  right: 0;
+  z-index: 15;
+  padding: 0 20px;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+
+  .ToggleButton {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+
+    img {
+      width: 30px;
+      height: 30px;
+      margin-right: 15px;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 24px;
+      color: #838383;
+    }
+  }
+}
+
+.MenuToggle.Open {
+  .JokeContent {
+    opacity: 1;
+  }
+}
+
+ 
+.Blackout {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (min-width: 1024px) {
+  .MenuToggle {
+    .ToggleButton {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .MenuToggle.Closed {
+    background-color: transparent;
+    z-index: 0;
+
+    .JokeContent {
+      opacity: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .MenuToggle {
+    max-width: 400px;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  .MenuToggle {
+    max-width: 500px;
+  }
+}

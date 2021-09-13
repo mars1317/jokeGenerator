@@ -1,0 +1,38 @@
+.FavouriteJokes {
+  .Title {
+    color: #c3c0c0;
+    font-size: 24px;
+    font-weight: 500;
+
+    display: none;
+  }
+
+  .JokeCardFav {
+    background-color: red;
+    max-width: 500px;
+
+    .Header {
+      p {
+        font-weight: 500;
+        color: #838383;
+        font-size: 24px;
+        margin: 0px;
+      }
+    }
+  }
+
+  .Exception {
+    color: #8f8ff6;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .FavouriteJokes {
+    .Title {
+      display: block;
+    }
+  }
+}
